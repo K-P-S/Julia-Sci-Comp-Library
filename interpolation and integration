@@ -1,4 +1,10 @@
-//Lagrange Interpolation
+###
+  Lagrange Interpolation
+  Lagrange Integration
+  Newton Interpolation
+  Newton Integration
+###
+
 
 function Lagrange(a)
   #accepts a 2 by n matrix
