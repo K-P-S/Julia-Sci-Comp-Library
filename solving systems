@@ -1,1 +1,37 @@
+###
+  Upper Trianglar Matrices
+  Lower Triangular Matrices
+  Solve via Augmented Guassian Elimination
+  Inverse via Augmented Guassian Elimination
+  Solve via Inverse Linear Transformation Matrix
+  Linear Least Squares Fitting
+  
+###
 
+function upTri(A, b)
+  # accepts upper triangular matrix and vector b
+  
+
+function lowTri(A)
+
+function GuassSolve(A, b)
+  # square matrix A, vector b
+  upTri(Guass([A b]))
+
+function InverseSolve(A, b)
+  return inverse(A) * b
+  
+
+function augGuassInverse()
+  for i = 1:dim(A)
+  
+
+
+function LLS(A)
+  # accepts 2 by n matrix 
+  # t
+  # y
+  T = [1 (A[2,:])']
+  y = A[1,:]'
+  Tpseudo = pseudo(T)
+  #complete via notes
