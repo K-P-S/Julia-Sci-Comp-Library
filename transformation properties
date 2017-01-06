@@ -1,1 +1,93 @@
+###
+  Eigenvalues
+  Eigenvectors
+  l1 Norm
+  l2 Norm
+  loo Norm
+  Apply Guassian Elimination
+  Apply Guassian Elimination with Pivots
+  Reduced-Row-Eschelon Form
+  Determine Linear Transformation Matrix
+  Rank and Nullity
+###
 
+//Eigenvalues
+function Eigenvalues(A)
+
+function Eigenvectors(A)
+  Eigenvalues(A)
+  Axb(A-   , ,0)
+
+
+//Vector Norms
+  #accepts vector of n space
+function l1(a)
+  for i=1:n
+    x=x+a[i]
+    
+end
+function l2(a)
+  x = 0
+  for i = 1:n
+    x += a[i]*a[i]  #initialize x
+  return sqrt(x)
+
+    
+function loo(a)
+  x = 0
+  for i = 1:n
+    if abs(a[i]) > x
+      x = abs(a[i])
+  return x
+
+
+
+//Guassian Eliminations
+
+function Guass(A)
+  # accepts n by m matrix
+  # find if n or m is smaller
+  for i=1:(smaller)
+    for j=i:m
+      lcm(A[i,i] , A[j,i])
+      A[j,:]-
+      
+function pivGuass(A) # maybe unessesary
+  x = 0
+  a = []
+  y = 0
+  for i=1:(smaller)
+    for j=i:m
+      x = lcm(A[i,i] , A[j,i])
+      a[y] = x
+      A[j,:]-
+
+function LTtoMatrix(a,b)
+  # accepts mxn set a and mxn set LT(a)
+  B = [a b]
+
+  return(C)
+
+function rref(A)
+  # accepts m by n matrix
+  for i=1:(smaller)
+    A[i,:] /= A[i,i] #incorporate %
+    for j = (1 : i-1) & (i+1 : m) #make sure logic
+      lcm(A[i,i] , A[j,i])
+      A[j,:]-
+
+
+//Rank and Nullity
+
+function Rank(A)
+  rank = 0
+  nullity = 0
+  B = rref(A)
+  for i=1:n
+    #need to fix n length issues
+    if B[i,:] = 0
+      nullity += 1
+      #add to a nullspace LinkedList
+
+
+function FindSubspaces(A)
