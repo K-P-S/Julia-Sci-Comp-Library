@@ -1,1 +1,57 @@
+###
+   Singular Value Decomposition
+   Condition Number of Matrix    
+   Pseudoinverse of Matrix
+   Eigen Decomposition
+   LU Decomposition
+   P-LU Decomposition    
+   Check Symmetric-Positive-Definite
+   Cholesky Decomposition
+   QR Decomposition
+###
 
+//Decompositions
+
+function SingularValueDecomposition(A)
+  # accepts matrix A
+
+function cond(A)
+  Eigenvalues(A)
+  
+
+function pseudo(A)
+
+function Eigendecomposition(A)
+  # accepts
+
+function LUDecomposition(A)
+  # admits square matrix
+  x = 0
+  d = dim(A)
+  #construct matrix C of equal dimenstions
+  
+  for i=1:d
+    for j=i:d
+      x = lcm(A[i,i] , A[j,i])
+      
+      C[i,j] = #sub value
+      A[j,:] - #sub value
+  
+  
+
+function checkSPD(A)
+  # accepts matrix
+
+function CholeskyDecomposition(A)
+  # accepts SPD matrix A
+  if checkSPD(A) = true
+    continue
+  else
+    #try catch error here
+  
+  
+
+function QRDecomposition(A)
+  # accepts ___ mxn
+  for i = 1:n
+    # webpage 
