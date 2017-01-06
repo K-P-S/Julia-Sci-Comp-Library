@@ -1,13 +1,13 @@
 ###
-   Singular Value Decomposition
-   Condition Number of Matrix    
-   Pseudoinverse of Matrix
-   Eigen Decomposition
-   LU Decomposition
-   P-LU Decomposition    
-   Check Symmetric-Positive-Definite
-   Cholesky Decomposition
-   QR Decomposition
+  Singular Value Decomposition
+  Condition Number of Matrix    
+  Pseudoinverse of Matrix
+  Eigen Decomposition
+  LU Decomposition
+  P-LU Decomposition    
+  Check Symmetric-Positive-Definite
+  Cholesky Decomposition
+  QR Decomposition
 ###
 
 //Decompositions
