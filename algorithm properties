@@ -1,0 +1,17 @@
+//Test Fixed Point Convergence
+
+function TestConvergence(p0,TOL,N0)
+  # takes starting point, tolerance, maximum iterations
+  i = 1
+  while i <= N0
+    p = g(p0)
+    if abs(p-p0) < tolerance
+      return
+    else
+      i += 1
+      p0 = p
+  #loop fails -> print failed after N0 tries
+  
+  
+  
+  
