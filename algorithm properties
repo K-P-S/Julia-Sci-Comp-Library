@@ -1,4 +1,7 @@
-//Test Fixed Point Convergence
+###
+  Fixed Point Convergence
+  Fixed Point Uniqueness
+###
 
 function TestConvergence(p0,TOL,N0)
   # takes starting point, tolerance, maximum iterations
