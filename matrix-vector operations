@@ -1,4 +1,7 @@
-//Dot Product
+###
+  Inner product (dot algorithm)
+  Outer product (cross algorithm)
+###
 
 #inititalize vector a
 #initialize vector b
