@@ -1,2 +1,2 @@
 # Julia-Sci-Computing
-Numerical Methods Written in Julia
+Library of Numerical Methods in Julia
