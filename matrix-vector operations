@@ -1,1 +1,17 @@
+//Dot Product
+
+#inititalize vector a
+#initialize vector b
+function dot(a,b)
+    try
+    for i=1:n
+      x=a[i]*b[i]
+      
+    finally
+    #print error: dimensions
+    end
+end
+
+
+
 
