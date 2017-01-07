@@ -6,8 +6,11 @@
 ###
 
 
-function Lagrange(a)
+function Lagrange(p)
   #accepts a 2 by n matrix
   for i=[2,1]:[2,n]
     for j=
 end
+
+function Newton(p)
+  
