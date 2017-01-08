@@ -1,4 +1,4 @@
-###
+#=
   Singular Value Decomposition
   Condition Number of Matrix    
   Pseudoinverse of Matrix
@@ -8,31 +8,62 @@
   Check Symmetric-Positive-Definite
   Cholesky Decomposition
   QR Decomposition
-###
+=#
 
-//Decompositions
-
-function SingularValueDecomposition(A)
+function singularValueDecomposition(A)
   # accepts matrix A
 
+
+
 function cond(A)
-  Eigenvalues(A)
+  #determines condition numebr
+  v = eigenvalues(A) 
+  #returns vector of Eigenvalues
+  return abs(loo(v) / loo(1 / v))
+  # largest over smallest
   
 
 function pseudo(A)
-
-function Eigendecomposition(A)
-  # accepts
-
-function LUDecomposition(A)
-  # admits square matrix
-  x = 0
-  d = dim(A)
-  #construct matrix C of equal dimenstions
+  B = transpose(A)
+  try
+    C = transpose(A) * (A * transpose(A))
+    return C
+  try 
+    C = (transpose(A) * A) * transpose(A)
+    return C
+  catch e
+    println e
+  end
+    
   
-  for i=1:d
-    for j=i:d
-      x = lcm(A[i,i] , A[j,i])
+    
+function eigenDecomposition(A)
+  # accepts
+  B = eigenvectors(A)
+  v = eigenvalues(A)
+  for i = 1:length(v)
+    #initialize matrix of zeroes size length(v) by length(v)
+    C[i,i] = v[i]
+  println(B)
+  print(C)
+  print(inverse(B))
+
+  
+
+function luDecomposition(A)
+  # admits square matrix
+  B = A
+  x = 0
+  a = size(A)[1]
+  #rows in A
+  #construct identity matrix C of equal dimenstions
+  
+  for i=1:a #or use here
+    for j = i+1 : a # and here
+      x = B[i,i] / B[i,j]
+      B[j,:] -= (x * B[i,:])
+      C[i,j] = x
+      
       
       C[i,j] = #sub value
       A[j,:] - #sub value
@@ -54,4 +85,5 @@ function CholeskyDecomposition(A)
 function QRDecomposition(A)
   # accepts ___ mxn
   for i = 1:n
-    # webpage 
+# webpage 
+
