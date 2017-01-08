@@ -1,6 +1,7 @@
 ###
   Inner product (dot algorithm)
   Outer product (cross algorithm)
+  
 ###
 
 #inititalize vector a
@@ -18,3 +19,6 @@ end
 
 
 
+function identityMatrix(m,n)
+
+function zeroesMatrix(m,n)
