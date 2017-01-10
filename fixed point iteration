@@ -16,9 +16,10 @@ function testConvergence(f,p0,TOL,N0)
     else
       i += 1
       p0 = p
+    end
+  end
   return false
   println("Failure: N0 tries")
-
 
 
 function testExistance(f,a,b)
@@ -28,8 +29,8 @@ function testExistance(f,a,b)
     #does this make asusmptions
   else
     return false
+  end
 
-  
 
 function testUniqueness(f,a,b)
   # interval [a,b]
@@ -38,8 +39,8 @@ function testUniqueness(f,a,b)
     #does this make assumptions
   else
     return false
+  end
   
-
 
 function newtonsMethod(f,p0,TOL,N0)
   if testConvergence(f) == true
@@ -51,9 +52,14 @@ function newtonsMethod(f,p0,TOL,N0)
         else
           i += 1
           p0 = p
+        end
+    end
   else
     #return eror e
+  end
 
+
+function secantMethod()
 
 
 function bisectionMethod(f,a,b,DOA,NO)
@@ -70,5 +76,18 @@ function bisectionMethod(f,a,b,DOA,NO)
         b = m
       else
         #return eror e
+      end
+    end
     return m
+  else
+    #return error e
+  end
+  
         
+      
+      
+      
+        
+      
+      
+
