@@ -1,2 +1,3 @@
-# Julia-Sci-Computing
-Library of Numerical Methods in Julia, inspired by classes I have taken in University
+# Julia Scientific Computing
+Library of Numerical Methods in Julia
+Inspired by classes taken at University
