@@ -80,12 +80,23 @@ function determinantTriangular(A)
   
     
 function determinantCofactors(A)
-  x = 0
-  #down frst column
+  a = 0
+  #down column one
   for i = 1:length(A)[:,1]
-    B = #remove column and rows
-    if length(B)[:,1] == 2
-      #
+    if length(B)[1,:] != 2
+      a += B[] * (-1)^ * determinantCofactors(reshape(B, ))
+    else
+      return (B[1,1] * B[2,2]) - (B[2,1] * b[1,2])
+    end
+  end
+  return a
+                
+                  
+  
+           
+    
+       
+                    
   
 
   
