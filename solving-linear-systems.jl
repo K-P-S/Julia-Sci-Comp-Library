@@ -64,14 +64,11 @@ function pseudo(A)
   end
 
 
-function linearLS(A)
+function linearLS(A,b)
   # accepts 2 by n matrix 
-  # t
-  # y
   T = [1 transpose(A[2,:])]
-  y = transpose(A[1,:])
-  Tpseudo = pseudo(T)
-#complete via notes
+  # solve notal equations ATA = ATb
+  return pseudo(T) * b
 
 
 function polyLS(A)
