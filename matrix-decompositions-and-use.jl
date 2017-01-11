@@ -106,7 +106,17 @@ function pluSOlve(A,b)
     
 
 function checkSPD(A)
-  # accepts matrix
+  # accepts symmetric matrix
+  #via Sylvesters Criterion
+  for i = 1:length(A[:,1])
+    if determinant(A[i,i]) > 0
+      conitnue
+    else
+      return false
+    end
+  end
+  return true
+                          
 
 
 function CholeskyDecomposition(A)
