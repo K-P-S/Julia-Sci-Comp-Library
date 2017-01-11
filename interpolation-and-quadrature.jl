@@ -13,7 +13,7 @@ function Lagrange(n,x,y)
   for i = [2,1]:[2,n]
     a = 1
     k = i
-    for j = 
+    for j = 1:
       if k == j
         continue
       else 
@@ -21,7 +21,7 @@ function Lagrange(n,x,y)
       end
     end
     f[i] = a * y[i]
-    for i = 0:n-1
+    for i = 1:n-1
       sum += f[i]
     end
   end
@@ -34,13 +34,13 @@ function Newton(n,x,y)
     for i = n-1:-1:j
       y[i] = (y[i]-y[i-1]) / (x[i]-x[i-j-1])
     end
-    for i=n-1:-1:0
-      m=1;
-      for j=0:i-1)
-          m *= (a-x[j])
+    for i = n-1:-1:0
+      a = 1;
+      for j= 1:i-1
+          a *= a - x[j]
       end    
-      m *= y[j]
-      sum += m
+      a *= y[j]
+      sum += a
     end
   end
   return sum
