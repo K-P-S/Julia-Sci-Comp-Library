@@ -8,28 +8,24 @@ function partition(A)
   #add try-catch
   #accepts square matrix A (assumes nxn, where n is power of two)
   n = length(A)[1]
-  
   W = new matrix(  )
   X = new matrix(  )
   Y = new matrix(  )
   Z = new matrix(  )
-  
   return W, X, Y, Z
 end
     
 
 function recursiveMultiply(A,B)
   n = length(A)[1]
-  
   #matrix C
   C = new zeroesMatrix( length(A)[1,:],length(B)[:,1] )
-  
+  #trivial case
   if n == 1
      return A[1:1] * B[1:1]
   else
     partition(A)
     partition(B)
-    
     #create 10 matrices (= Theta(n^2))
     S1 = B12 - B22
     S2 = A11 + A22
@@ -41,7 +37,6 @@ function recursiveMultiply(A,B)
     S8 = B21 + B22
     S9 = A11 - A21
     S10 = B11 + B12
-    
     #multiplications
     P1 = recursiveMultiply(A11, S1)
     P2 = recursiveMultiply(S2, B22)
@@ -50,7 +45,6 @@ function recursiveMultiply(A,B)
     P5 = recursiveMultiply(S5, S6)
     P6 = recursiveMultiply(S7, S8)
     P7 = recursiveMultiply(S9, S10)
-    
     #defining C
     C11 = P5 + P4 - P2 + P6
     C12 = P1 + P2
